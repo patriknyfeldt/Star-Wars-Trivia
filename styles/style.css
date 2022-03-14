@@ -38,7 +38,7 @@ body .error-msg {
 }
 
 body .container {
-  background-image: url(images/background.jpg);
+  background-image: "images/background.jpg";
 }
 
 body .container .main {
