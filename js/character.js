@@ -7,7 +7,7 @@ class Character {
         this.mass = +mass;
         this.hairColor = hairColor;
         this.value = value;
-        this.pictureUrl = `/images/character-${value}.png`;
+        this.pictureUrl = `images/character-${value}.png`;
         this.otherCharacter = otherCharacter;
         characters.push(this);
     }
