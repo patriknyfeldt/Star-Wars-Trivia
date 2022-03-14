@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Star Wars Trivia</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>
+        <img src="/images/logo.png" alt="image of star wars logo" />
+      </h1>
+    </header>
+    <div id="error-msg-box"></div>
+    <div class="container">
+      <main class="main">
+        <form class="choose-character-form" id="choose-character-form">
+          <div class="choose-character">
+            <label for="select-character-1">Choose character</label>
+            <select name="select-character-1" id="select-character-1">
+              <option value="">characters</option>
+              <option value="1">Luke Skywalker</option>
+              <option value="2">C-3PO</option>
+              <option value="3">R2-D2</option>
+              <option value="4">Darth Vader</option>
+              <option value="10">Obi-Wan Kenobi</option>
+              <option value="13">Chewbacca</option>
+              <option value="14">Han Solo</option>
+              <option value="20">Yoda</option>
+            </select>
+          </div>
+          <button class="compare-btn compare-btn desktop" id="compare-btn">
+            Compare!
+          </button>
+          <div class="choose-character">
+            <label for="select-character-2">Choose character</label>
+            <select name="select-character-2" id="select-character-2">
+              <option value="">characters</option>
+              <option value="1">Luke Skywalker</option>
+              <option value="2">C-3PO</option>
+              <option value="3">R2-D2</option>
+              <option value="4">Darth Vader</option>
+              <option value="10">Obi-Wan Kenobi</option>
+              <option value="13">Chewbacca</option>
+              <option value="14">Han Solo</option>
+              <option value="20">Yoda</option>
+            </select>
+          </div>
+          <button class="compare-btn mobile" id="compare-btn">Compare!</button>
+        </form>
+        <section class="character-wrapper" id="character-wrapper-1"></section>
+        <section class="mid-wrapper hide" id="mid-wrapper">
+          <h2>VS</h2>
+          <button class="new-characters-btn desktop" id="new-characters-btn-1">
+            Choose new characters
+          </button>
+        </section>
+        <section class="character-wrapper" id="character-wrapper-2"></section>
+        <section class="bottom-wrapper hide" id="bottom-wrapper">
+          <button class="new-characters-btn mobile" id="new-characters-btn-2">
+            Choose new characters
+          </button>
+        </section>
+      </main>
+    </div>
+    <script src="/js/get-data.js"></script>
+    <script src="/js/character.js"></script>
+    <script src="/js/draw-characters.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

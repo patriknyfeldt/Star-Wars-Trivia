@@ -1,0 +1,389 @@
+@import url("http://fonts.cdnfonts.com/css/distant-galaxy");
+@import url("http://fonts.cdnfonts.com/css/starjedi-special-edition");
+body {
+  background-image: url(/images/background.jpg);
+  height: 100vh;
+  margin: 0;
+}
+
+body .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .header h1 {
+  text-align: center;
+}
+
+body .header h1 img {
+  max-width: 100%;
+}
+
+body .error-msg {
+  text-align: center;
+  font-family: "Star Jedi", sans-serif;
+  color: #ffbc47;
+  font-size: 20px;
+}
+
+body .container {
+  background-image: url(/images/background.jpg);
+}
+
+body .container .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 680px) {
+  body .container .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+body .container .main .choose-character-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+
+@media (min-width: 680px) {
+  body .container .main .choose-character-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+body .container .main .choose-character-form .choose-character {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  gap: 20px;
+}
+
+body .container .main .choose-character-form .choose-character label {
+  color: #ffbc47;
+  font-family: "Distant Galaxy", sans-serif;
+  font-size: 20px;
+}
+
+body .container .main .choose-character-form .choose-character select {
+  font-family: "Distant Galaxy", sans-serif;
+  height: 30px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 5px;
+  background-color: #ffbc47;
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+body .container .main .choose-character-form .choose-character select option {
+  font-family: "Distant Galaxy", sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+body .container .main .choose-character-form .compare-btn {
+  -webkit-box-shadow: #ffbc47 inset 0px 1px 8px;
+          box-shadow: #ffbc47 inset 0px 1px 8px;
+  border-radius: 10px;
+  padding: 2% 2%;
+  font-family: "Distant Galaxy", sans-serif;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #ffbc47;
+  font-size: 25px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 250px;
+}
+
+body .container .main .choose-character-form .compare-btn:hover {
+  -webkit-box-shadow: #ffbc47 0px 3px 15px;
+          box-shadow: #ffbc47 0px 3px 15px;
+}
+
+@media (min-width: 680px) {
+  body .container .main .choose-character-form .compare-btn {
+    margin-top: 10%;
+  }
+  body .container .main .choose-character-form .compare-btn.mobile {
+    display: none;
+  }
+}
+
+body .container .main .choose-character-form .compare-btn.desktop {
+  display: none;
+}
+
+@media (min-width: 680px) {
+  body .container .main .choose-character-form .compare-btn.desktop {
+    display: initial;
+  }
+}
+
+body .container .main .choose-character-form.hide {
+  display: none;
+}
+
+body .container .main .character-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .main .character-wrapper h2 {
+  font-size: 25px;
+  color: #ffbc47;
+  font-family: "Distant Galaxy", sans-serif;
+}
+
+body .container .main .character-wrapper img {
+  height: 280px;
+}
+
+body .container .main .character-wrapper p {
+  font-family: "Distant Galaxy", sans-serif;
+  color: #ffbc47;
+  margin-bottom: 20px;
+}
+
+body .container .main .character-wrapper .text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .main .character-wrapper .text-box .text-field {
+  text-align: center;
+}
+
+body .container .main .character-wrapper .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .container .main .character-wrapper .btn-group .characteristics-btns {
+  -webkit-box-shadow: #ffbc47 0px 3px 15px;
+          box-shadow: #ffbc47 0px 3px 15px;
+  background-color: #ffbc47;
+  border: none;
+  border-radius: 3px;
+  font-family: "Distant Galaxy", sans-serif;
+  cursor: pointer;
+  padding-top: 1%;
+}
+
+body .container .main .character-wrapper .btn-group .characteristics-btns:hover {
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+body .container .main .mid-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .main .mid-wrapper h2 {
+  color: #ffbc47;
+  font-family: "Star Jedi Hollow", sans-serif;
+  font-size: 70px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body .container .main .mid-wrapper .new-characters-btn {
+  -webkit-box-shadow: #ffbc47 inset 0px 1px 8px;
+          box-shadow: #ffbc47 inset 0px 1px 8px;
+  border-radius: 10px;
+  padding: 2% 2%;
+  font-family: "Distant Galaxy", sans-serif;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #ffbc47;
+  font-size: 25px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 250px;
+  display: none;
+}
+
+body .container .main .mid-wrapper .new-characters-btn:hover {
+  -webkit-box-shadow: #ffbc47 0px 3px 15px;
+          box-shadow: #ffbc47 0px 3px 15px;
+}
+
+@media (min-width: 680px) {
+  body .container .main .mid-wrapper .new-characters-btn {
+    display: initial;
+  }
+}
+
+body .container .main .mid-wrapper.hide {
+  display: none;
+}
+
+body .container .main .bottom-wrapper .new-characters-btn {
+  -webkit-box-shadow: #ffbc47 inset 0px 1px 8px;
+          box-shadow: #ffbc47 inset 0px 1px 8px;
+  border-radius: 10px;
+  padding: 2% 2%;
+  font-family: "Distant Galaxy", sans-serif;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #ffbc47;
+  font-size: 25px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 250px;
+  margin: 10%;
+}
+
+body .container .main .bottom-wrapper .new-characters-btn:hover {
+  -webkit-box-shadow: #ffbc47 0px 3px 15px;
+          box-shadow: #ffbc47 0px 3px 15px;
+}
+
+@media (min-width: 680px) {
+  body .container .main .bottom-wrapper .new-characters-btn {
+    display: none;
+  }
+}
+
+body .container .main .bottom-wrapper.hide {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

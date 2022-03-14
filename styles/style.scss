@@ -1,0 +1,152 @@
+@import "partials/_mixins.scss";
+@import "partials/variables.scss";
+@import url("http://fonts.cdnfonts.com/css/distant-galaxy");
+@import url("http://fonts.cdnfonts.com/css/starjedi-special-edition");
+body {
+  background-image: url(/images/background.jpg);
+  height: 100vh;
+  margin: 0;
+  .header {
+    @include flex(row, center, center);
+    h1 {
+      text-align: center;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .error-msg {
+    text-align: center;
+    font-family: $alt-font-2;
+    color: $text-color;
+    font-size: 20px;
+  }
+  .container {
+    background-image: url(/images/background.jpg);
+    .main {
+      @include flex(column, center, center);
+      width: 100%;
+      @media (min-width: $breakpoint) {
+        @include flex(row, space-around, flex-start);
+      }
+      .choose-character-form {
+        @include flex(column, center, center);
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px;
+        @media (min-width: $breakpoint) {
+          @include flex(row, space-around, flex-start);
+        }
+        .choose-character {
+          @include flex(column, center, center);
+          margin-top: 4%;
+          flex: 1;
+          gap: 20px;
+          label {
+            color: $text-color;
+            font-family: $character-name-font-2;
+            font-size: 20px;
+          }
+          select {
+            font-family: $character-name-font-2;
+            height: 30px;
+            appearance: none;
+            border-radius: 5px;
+            background-color: $text-color;
+            font-size: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            option {
+              font-family: $character-name-font-2;
+              text-align: center;
+              font-size: 20px;
+            }
+          }
+        }
+        .compare-btn {
+          @include big-button;
+          @media (min-width: $breakpoint) {
+            margin-top: 10%;
+            &.mobile {
+              display: none;
+            }
+          }
+          &.desktop {
+            display: none;
+            @media (min-width: $breakpoint) {
+              display: initial;
+            }
+          }
+        }
+        &.hide {
+          display: none;
+        }
+      }
+      .character-wrapper {
+        flex: 1;
+        @include flex(column, center, center);
+        h2 {
+          font-size: 25px;
+          color: $text-color;
+          font-family: $character-name-font-2;
+        }
+        img {
+          height: 280px;
+        }
+        p {
+          font-family: $character-name-font-2;
+          color: $text-color;
+          margin-bottom: 20px;
+        }
+        .text-box {
+          @include flex(row, center, center);
+          .text-field {
+            text-align: center;
+          }
+        }
+        .btn-group {
+          @include flex(row, flex-start, flex-start);
+          gap: 5px;
+          flex-wrap: wrap;
+
+          .characteristics-btns {
+            @include small-button;
+            padding-top: 1%;
+          }
+        }
+      }
+      .mid-wrapper {
+        flex: 1;
+        @include flex(column, center, center);
+        h2 {
+          color: $text-color;
+          font-family: $character-name-font-1;
+          font-size: 70px;
+          height: fit-content;
+        }
+        .new-characters-btn {
+          @include big-button;
+          display: none;
+          @media (min-width: $breakpoint) {
+            display: initial;
+          }
+        }
+        &.hide {
+          display: none;
+        }
+      }
+      .bottom-wrapper {
+        .new-characters-btn {
+          @include big-button;
+          margin: 10%;
+          @media (min-width: $breakpoint) {
+            display: none;
+          }
+        }
+        &.hide {
+          display: none;
+        }
+      }
+    }
+  }
+}
