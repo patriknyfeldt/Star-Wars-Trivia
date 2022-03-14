@@ -4,7 +4,7 @@
     "sources": [
         "style.scss",
         "partials/_mixins.scss",
-        "partials/variables.scss"
+        "partials/_variables.scss"
     ],
     "names": [],
     "file": "style.css"
