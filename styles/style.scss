@@ -22,7 +22,7 @@ body {
     font-size: 20px;
   }
   .container {
-    background-image: url(/images/background.jpg);
+    background-image: url(images/background.jpg);
     .main {
       @include flex(column, center, center);
       width: 100%;
