@@ -231,6 +231,7 @@ body .container .main .character-wrapper img {
 }
 
 body .container .main .character-wrapper p {
+  text-align: center;
   font-family: "Distant Galaxy", sans-serif;
   color: #ffbc47;
   margin-bottom: 20px;
