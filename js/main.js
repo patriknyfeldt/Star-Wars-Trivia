@@ -3,19 +3,17 @@ const errorMsgBox = document.getElementById('error-msg-box');
 
 chooseCharacterForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    console.log('fetching data')
     characters.length = 0;
     const chosenCharacterOneValue = document.querySelector('#select-character-1 option:checked').value;
     const chosenCharacterTwoValue = document.querySelector('#select-character-2 option:checked').value;
     if(chosenCharacterOneValue && chosenCharacterTwoValue){
         errorMsgBox.innerHTML = '';
         await getCharacters(chosenCharacterOneValue, chosenCharacterTwoValue);
-        console.log('data fetched')
         characters.forEach((character, i) => {
             i++;
             showAndHideElements();
             setInnerHtmlToCharacterWrapper(character, i);
-            addEventListenersToCompareBtns(character, i);
+            addEventListenersToCharacteristicsBtns(character, i);
         })
     }
     else{
@@ -27,7 +25,7 @@ const setInnerHtmlToCharacterWrapper = (character, i) => {
     document.getElementById(`character-wrapper-${i}`).innerHTML = drawCharacter(character, i);
 }
 
-const addEventListenersToCompareBtns = (character, i) => {
+const addEventListenersToCharacteristicsBtns = (character, i) => {
     const textField = document.getElementById(`textfield-${i}`)
 
     document.getElementById(`character-${i}-weight-btn`).addEventListener('click', () => {
