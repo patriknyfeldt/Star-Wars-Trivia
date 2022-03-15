@@ -13,11 +13,11 @@ class Character {
     }
     compareWeight(textField){
         const that = this.otherCharacter;
-        if(that.mass > this.mass){
+        if(+that.mass > this.mass){
             textField.innerText = `${that.name} weighs ${that.mass} kilos,
             wich is ${that.mass - this.mass} kilos more than me.`
         }
-        else if(that.mass < this.mass){
+        else if(+that.mass < this.mass){
             textField.innerText = `${that.name} weighs ${that.mass} kilos,
             wich is ${this.mass - that.mass} kilos less than me.`;
         }
@@ -27,11 +27,11 @@ class Character {
     }
     compareHeight(textField){
         const that = this.otherCharacter;
-        if(that.height > this.height){
+        if(+that.height > this.height){
             textField.innerText = `${that.name} is ${that.height} cm tall, 
             wich is ${that.height - this.height} cm taller than me.`;
         }
-        else if(that.height < this.height){
+        else if(+that.height < this.height){
             textField.innerText = `${that.name} is ${that.height} cm tall, 
             wich is ${this.height - that.height} cm shorter than me`;
         }
