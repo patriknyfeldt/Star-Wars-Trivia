@@ -17,7 +17,7 @@ body {
   .error-msg {
     text-align: center;
     font-family: $font-2;
-    color: $text-color;
+    color: $yellow;
     font-size: 20px;
   }
   .container {
@@ -42,7 +42,7 @@ body {
           flex: 1;
           gap: 20px;
           label {
-            color: $text-color;
+            color: $yellow;
             font-family: $font-1;
             font-size: 20px;
           }
@@ -51,7 +51,8 @@ body {
             height: 30px;
             appearance: none;
             border-radius: 5px;
-            background-color: $text-color;
+            background-color: $yellow;
+            color: black;
             font-size: 20px;
             margin-bottom: 20px;
             cursor: pointer;
@@ -86,7 +87,7 @@ body {
         @include flex(column, center, center);
         h2 {
           font-size: 25px;
-          color: $text-color;
+          color: $yellow;
           font-family: $font-1;
         }
         img {
@@ -95,7 +96,7 @@ body {
         p {
           text-align: center;
           font-family: $font-1;
-          color: $text-color;
+          color: $yellow;
           margin-bottom: 20px;
         }
         .text-box {
@@ -111,6 +112,7 @@ body {
 
           .characteristics-btns {
             @include small-button;
+            color: black;
             padding-top: 1%;
           }
         }
@@ -119,7 +121,7 @@ body {
         flex: 1;
         @include flex(column, center, center);
         h2 {
-          color: $text-color;
+          color: $yellow;
           font-family: $font-3;
           font-size: 70px;
           height: fit-content;

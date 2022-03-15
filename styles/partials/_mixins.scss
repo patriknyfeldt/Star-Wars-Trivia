@@ -5,8 +5,8 @@
   align-items: $align;
 }
 @mixin small-button {
-  box-shadow: $text-color 0px 3px 15px;
-  background-color: $text-color;
+  box-shadow: $yellow 0px 3px 15px;
+  background-color: $yellow;
   border: none;
   border-radius: 3px;
   font-family: $font-1;
@@ -17,18 +17,18 @@
   }
 }
 @mixin big-button {
-  box-shadow: $text-color inset 0px 1px 8px;
+  box-shadow: $yellow inset 0px 1px 8px;
   border-radius: 10px;
   padding: 2% 2%;
   font-family: $font-1;
   cursor: pointer;
   background: none;
   border: none;
-  color: $text-color;
+  color: $yellow;
   font-size: 25px;
   flex: 1;
   max-width: 250px;
   &:hover {
-    box-shadow: $text-color 0px 3px 15px;
+    box-shadow: $yellow 0px 3px 15px;
   }
 }

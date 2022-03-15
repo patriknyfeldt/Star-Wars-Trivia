@@ -145,6 +145,7 @@ body .container .main .choose-character-form .choose-character select {
           appearance: none;
   border-radius: 5px;
   background-color: #ffbc47;
+  color: black;
   font-size: 20px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -284,6 +285,7 @@ body .container .main .character-wrapper .btn-group .characteristics-btns {
   border-radius: 3px;
   font-family: "Distant Galaxy", sans-serif;
   cursor: pointer;
+  color: black;
   padding-top: 1%;
 }
 
