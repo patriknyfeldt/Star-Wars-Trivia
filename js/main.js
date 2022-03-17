@@ -1,6 +1,5 @@
 const chooseCharacterForm = document.getElementById('choose-character-form');
 const errorMsgBox = document.getElementById('error-msg-box');
-
 chooseCharacterForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     characters.length = 0;
@@ -9,16 +8,17 @@ chooseCharacterForm.addEventListener('submit', async (e) => {
     if(chosenCharacterOneValue && chosenCharacterTwoValue){
         errorMsgBox.innerHTML = '';
         await getCharacters(chosenCharacterOneValue, chosenCharacterTwoValue);
-        characters.forEach((character, i) => {
-            i++;
-            showAndHideElements();
-            setInnerHtmlToCharacterWrapper(character, i);
-            addEventListenersToCharacteristicsBtns(character, i);
-        })
+            characters.forEach((character, i) => {
+                i++;
+                showAndHideElements();
+                setInnerHtmlToCharacterWrapper(character, i);
+                addEventListenersToCharacteristicsBtns(character, i);
+            })
     }
     else{
         drawErrorMsg('Please select two characters!');
     }
+
 })
 
 const setInnerHtmlToCharacterWrapper = (character, i) => {

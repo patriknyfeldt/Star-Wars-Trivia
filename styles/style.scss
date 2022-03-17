@@ -67,6 +67,7 @@ body {
           @include big-button;
           @media (min-width: $breakpoint) {
             margin-top: 10%;
+
             &.mobile {
               display: none;
             }
